@@ -1,4 +1,4 @@
-xfsprogs (4.8.0-1rax0) stable; urgency=low
+xfsprogs (4.8.0-1rax0) stable; urgency=medium
 
   * Backporting to Ubuntu precise/trusty from 4.8.0
 
