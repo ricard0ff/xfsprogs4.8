@@ -67,7 +67,7 @@ dibuild:  .reconf
 clean:
 	@echo "== dpkg-buildpackage: clean" 1>&2
 	$(checkdir)
-	-rm -f built .census mkfs/mkfs.xfs-$(bootpkg)
+	-rm -f built .census .reconf mkfs/mkfs.xfs-$(bootpkg)
 	$(MAKE) distclean
 	-rm -rf $(dirme) $(dirdev) $(dirdi)
 	-rm -f debian/*substvars debian/files* debian/*.debhelper
