@@ -26,7 +26,7 @@ diopts  = $(options) \
 checkdir = test -f debian/rules
 
 build: built
-built: dibuild config
+built: reconf dibuild config
 	@echo "== dpkg-buildpackage: build" 1>&2
 	$(MAKE) default
 	touch built
