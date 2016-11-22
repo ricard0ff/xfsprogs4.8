@@ -1,3 +1,9 @@
+xfsprogs (4.8.0-1rax0) stable; urgency=low
+
+  * Backporting to Ubuntu precise/trusty from 4.8.0
+
+ -- Ricardo Ferreira <ricardo.sff@gmail.com>  Mon, 22 Nov 2016 13:37:00 +0000
+
 xfsprogs (4.8.0) unstable; urgency=low
 
   * New upstream release
