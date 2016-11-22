@@ -31,15 +31,24 @@ built: dibuild config
 	$(MAKE) default
 	touch built
 
-config: .census
+
+reconf: .reconf
+.reconf:
+	$(checkdir)
+	AUTOHEADER=/bin/true dh_autoreconf
+	touch $@
+
+
+config: .census .reconf
 .census:
 	@echo "== dpkg-buildpackage: configure" 1>&2
 	$(checkdir)
-	AUTOHEADER=/bin/true dh_autoreconf
 	$(options) $(MAKE) include/platform_defs.h
 	touch .census
 
-dibuild:
+
+
+dibuild:  .reconf
 	$(checkdir)
 	@echo "== dpkg-buildpackage: installer" 1>&2
 	if [ ! -f mkfs/mkfs.xfs-$(bootpkg) ]; then \
