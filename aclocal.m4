@@ -1,5 +1,5 @@
 # generated automatically by aclocal 1.15 -*- Autoconf -*-
-
+#lolwut
 # Copyright (C) 1996-2014 Free Software Foundation, Inc.
 
 # This file is free software; the Free Software Foundation
